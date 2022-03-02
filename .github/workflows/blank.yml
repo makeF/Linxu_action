@@ -24,4 +24,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: echo uname
-        run: sudo whoami
+        run: echo `sudo whoami`
