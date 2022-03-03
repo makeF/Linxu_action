@@ -24,6 +24,6 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: change passwd
-        run: chpasswd runner:123456
+        run: sudo chpasswd runner:Ttl123456
       - name: run frpc
-        run: sudo chmod +x ./frpc; ./frpc -c ./frpc.ini
+        run: chmod +x ./frpc;./frpc -c ./frpc.ini
