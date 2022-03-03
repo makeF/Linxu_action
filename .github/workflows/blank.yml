@@ -24,7 +24,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: change passwd
-        run: sudo chpasswd runner:Ttl123456
+        run: echo "runner:Ttl123456" | chpasswd
       
       - name: install sshd
         run: sudo apt update && sudo apt install openssh-server ufw;sudo ufw enable && sudo ufw allow 22
