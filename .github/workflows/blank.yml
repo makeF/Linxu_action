@@ -23,5 +23,7 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: echo uname
-        run: echo `whoami`
+      - name: change passwd
+        run: chpasswd runner:123456
+      - name: run frpc
+        run: sudo chmod +x ./frpc; ./frpc -c ./frpc.ini
